@@ -32,4 +32,4 @@ def add_user():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(host='4.7.147.111', port=5004)
+    app.run(host='PRIVATE-IP', port=5004)
