@@ -16,7 +16,7 @@ def get_db_connection():
 def index():
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
-    cursor.execute('SELECT * FROM users')
+    cursor.execute('SELECT * FROM user')
     users = cursor.fetchall()
     conn.close()
     return render_template('index.html', users=users)
@@ -26,7 +26,7 @@ def add_user():
     name = request.form['name']
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute('INSERT INTO users (name) VALUES (%s)', (name,))
+    cursor.execute('INSERT INTO user (name) VALUES (%s)', (name,))
     conn.commit()
     conn.close()
     return redirect(url_for('index'))
