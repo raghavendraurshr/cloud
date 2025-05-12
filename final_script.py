@@ -55,8 +55,8 @@ def create_ec2_instance():
     # Create a session using your AWS credentials and region
 
     session = boto3.Session(
-        aws_access_key_id='AKIA2ZWW2Z2ASK7HMVXT',
-        aws_secret_access_key='k4zo5QkuZbTcU4x6Suq7nQt6dwhpKnFAo5J4Sq8c',
+        aws_access_key_id='xyz', # Replace with original aws_access_key_id
+        aws_secret_access_key='xyz', # Replace with original aws_secret_access_key
         region_name='us-east-2'
     )
 
