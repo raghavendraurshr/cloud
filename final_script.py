@@ -70,13 +70,13 @@ def create_ec2_instance():
 
     # Create a new EC2 instance
     instances = ec2.create_instances(
-        ImageId='ami-09040d770ffe2224f',
+        ImageId='xyz',
         MinCount=1,
         MaxCount=1,
         InstanceType='t2.micro',
         KeyName='haproxy',
-        SecurityGroupIds=['sg-0340a6cb9f1923c12'],
-        SubnetId='subnet-b7df24df',
+        SecurityGroupIds=['xyz'],
+        SubnetId='xyz',
         TagSpecifications=[
         {
             'ResourceType': 'instance',
